@@ -1,9 +1,8 @@
-import './assets/style.scss';
 import React from 'react';
-import { render } from 'react-dom';
-import App from './components/App';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
 
-render(
-  <App year="2019" title="app" />,
-  document.querySelector('#app'),
-);
+ReactDOM.render(<div/>, document.getElementById('root'));
+
+serviceWorker.unregister();
