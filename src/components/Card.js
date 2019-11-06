@@ -10,10 +10,6 @@ export default class Card extends React.Component {
     };
   }
   
-  componentDidMount() {
-    this.props.getTitle(this.state.title);
-  }
-  
   render() {
     const { showDescription } = this.state;
     const { title, backgroundImage, date, rating, votes, description } = this.props;
